@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPSTORE - Recommended for you</title>
+
+    <link rel="icon" href="./assets/app/images/main/favicon-circle.png" type="image/x-icon" />
+
+
+    <!-- prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <!-- <link rel="dns-prefetch" href="//appstore.com"> -->
+
+    <!-- preload font -->
+    <link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Regular.ttf' as='font' type='font/ttf' crossorigin>
+	<link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Medium.ttf' as='font' type='font/ttf' crossorigin>
+	<link rel='preload' href='./assets/app/fonts/PlusJakartaSans-SemiBold.ttf' as='font' type='font/ttf' crossorigin>
+	<link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Bold.ttf' as='font' type='font/ttf' crossorigin>
+
+    <!-- preload logo -->
+    <link rel="preload" href="./assets/app/images/main/logo-dark.png" as="image" type="image/png">
+    <link rel="preload" href="./assets/app/images/main/logo-light.png" as="image" type="image/png">
+
+    <!-- CSS vendor-->
+    <link rel="stylesheet" href="./assets/vendors/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/fancybox/fancybox.css">
+    
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/app/css/base-main.css" />
+    <link rel="stylesheet" href="./assets/app/css/base-space.css" />
+    <link rel="stylesheet" href="./assets/app/css/base-project.css" />
+    <link rel="stylesheet" href="./assets/app/css/plugin.css" />
+    <link rel="stylesheet" href="./assets/app/css/menu.css" />
+    <!-- Current project -->
+    <link rel="stylesheet" href="./assets/app/css/style.css" />
+
+</head>
+<body>
+    <h1 class='homepage-heading'>SEO TITLE</h1>
+    <div class="main-container" id="page-wrapper">
+        <header>
+            <div class="header-wrapper">
+                <div class="container">
+                    <div class="header-inner grid items-center">
+                        <div class="header-left">
+                            <div class="menu-toggle cursor-pointer text-black hover:text-primary">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 7H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M3 17H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="header-search cursor-pointer text-black hover:text-primary">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.2" />
+                                    <path d="M20 20L17 17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="/index.html" class="site-logo flex items-center">
+                            <img src="./assets/app/images/main/logo-dark.png" style="height: 40px;" alt="APK STORE" />
+                        </a>
+                        <div class="header-center">
+                            <div class="horizontal-menu">
+                                <nav class="nav-bar" role="navigation">
+                                    <div class="mobile-nav-header">
+                                        <div class="mobile-nav-title">MENU</div>
+                                        <a href="#" class="menu-close text-black hover:text-primary">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 13.0967L13 1.09668" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M13 13.0967L1 1.09668" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="nav-bar-content">
+                                        <ul class="site-nav">
+                                            <li class="menu-lv-1 item">
+                                                <a class="" href="./index.html">
+                                                    <span class="item-text">Home</span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-lv-1 item">
+                                                <a class="" href="games.html">
+                                                    <span class="item-text">Games</span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-lv-1 item">
+                                                <a class="" href="apps.html">
+                                                    <span class="item-text">Apps</span>
+                                                </a>
+                                            </li>
+                                            <!-- If has sub menu: add class menu-dropdown to menu-lv-1 li -->
+                                            <li class="menu-lv-1 item">
+                                                <a href="blog--listing.html">
+                                                    <span class="item-text">Topics</span>
+                                                    <!-- If has sub menu -->
+                                                    <!-- <span class="icon-dropdown">
+                                                        <svg class="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419Z" fill="currentColor"/>
+                                                        </svg>                                                            
+                                                    </span> -->
+                                                </a>
+                                                <!-- <div class="sub-menu-mobile">
+                                                    <div class="menu-mb-title">
+                                                        <span class="icon-dropdown">
+                                                            <svg class="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419Z" fill="currentColor"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="item-text">Topics</span>
+                                                    </div>
+    
+                                                    <ul class="site-nav-dropdown">
+                                                        <li class="menu-lv-2 hide_pc">
+                                                            <a href="blog--listing.html">
+                                                                <span class="item-text">All topics</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-lv-2">
+                                                            <a href="blog--listing.html">
+                                                                <span class="item-text">Topics cat 1</span>
+                                                            </a>
+                                                        </li>
+    
+                                                        <li class="menu-lv-2">
+                                                            <a href="blog--listing.html">
+                                                                <span class="item-text">Topics cat 2</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div> -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="header-right flex items-center justify-end">
+                            <div class="header-search-desktop-outer">
+                                <div class="container">
+                                    <div class="header-search-desktop-inner">
+                                        <div class="header-search-desktop">
+                                            <form class="header-search-desktop-form" role="search" method="get" id="searchForm" action="./search.html">
+                                                <input class="header-search-desktop-input rounded" type="text" placeholder="Search" />
+                                                <button class="header-search-desktop-btn header-search-desktop-submit" type="submit">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33333 2.5C4.66396 2.5 2.5 4.66396 2.5 7.33333C2.5 10.0027 4.66396 12.1667 7.33333 12.1667C8.64041 12.1667 9.82631 11.6478 10.6963 10.8049C10.7113 10.7844 10.728 10.7649 10.7464 10.7464C10.7649 10.728 10.7844 10.7113 10.8049 10.6963C11.6478 9.82631 12.1667 8.64041 12.1667 7.33333C12.1667 4.66396 10.0027 2.5 7.33333 2.5ZM11.7966 11.0895C12.6515 10.0747 13.1667 8.76415 13.1667 7.33333C13.1667 4.11167 10.555 1.5 7.33333 1.5C4.11167 1.5 1.5 4.11167 1.5 7.33333C1.5 10.555 4.11167 13.1667 7.33333 13.1667C8.76415 13.1667 10.0747 12.6515 11.0895 11.7966L13.6464 14.3536C13.8417 14.5488 14.1583 14.5488 14.3536 14.3536C14.5488 14.1583 14.5488 13.8417 14.3536 13.6464L11.7966 11.0895ZM6.83333 4C6.83333 3.72386 7.05719 3.5 7.33333 3.5C9.45043 3.5 11.1667 5.21624 11.1667 7.33333C11.1667 7.60948 10.9428 7.83333 10.6667 7.83333C10.3905 7.83333 10.1667 7.60948 10.1667 7.33333C10.1667 5.76853 8.89814 4.5 7.33333 4.5C7.05719 4.5 6.83333 4.27614 6.83333 4Z" fill="#A0A0A0"/>
+                                                    </svg>                                                
+                                                </button>
+                                                <button class="header-search-desktop-btn header-search-desktop-clear" type="button">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 3.64645C3.84171 3.45118 4.15829 3.45118 4.35355 3.64645L8 7.29289L11.6464 3.64645C11.8417 3.45118 12.1583 3.45118 12.3536 3.64645C12.5488 3.84171 12.5488 4.15829 12.3536 4.35355L8.70711 8L12.3536 11.6464C12.5488 11.8417 12.5488 12.1583 12.3536 12.3536C12.1583 12.5488 11.8417 12.5488 11.6464 12.3536L8 8.70711L4.35355 12.3536C4.15829 12.5488 3.84171 12.5488 3.64645 12.3536C3.45118 12.1583 3.45118 11.8417 3.64645 11.6464L7.29289 8L3.64645 4.35355C3.45118 4.15829 3.45118 3.84171 3.64645 3.64645Z" fill="#A0A0A0"/>
+                                                    </svg>                                                                                               
+                                                </button>
+                                            </form>
+                                            <div class="header-search-result-outer" id="searchResult">
+                                                <div class="header-search-result rounded bg-white p-3 gap-4 flex flex-col">
+                                                    <div class="flex gap-4 items-start pb-2">
+                                                        <div class="flex-1">
+                                                            <div class="app-card">
+                                                                <div class="app-card-content">
+                                                                    <div class="app-card-thumb">
+                                                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-1.jpg" alt="Name of the app" class="ratio-media">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="app-card-info">
+                                                                        <h3 class="app-card-title">
+                                                                            <a href="./details.html">Name of the app</a>
+                                                                        </h3>
+                                                                        <div class="app-card-meta">
+                                                                            <span class="chip-text">vx.y</span>
+                                                                            <span class="chip-text">Text name</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="./detail--download.html" class="theme-btn btn-primary btn-sm download-btn">
+                                                            <div class="btn-text">Download</div>
+                                                            <div class="btn-icon">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M12 3.75V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                                    
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex gap-4 items-start pb-2">
+                                                        <div class="flex-1">
+                                                            <div class="app-card">
+                                                                <div class="app-card-content">
+                                                                    <div class="app-card-thumb">
+                                                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-2.jpg" alt="Name of the app" class="ratio-media">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="app-card-info">
+                                                                        <h3 class="app-card-title">
+                                                                            <a href="./details.html">Name of the app</a>
+                                                                        </h3>
+                                                                        <div class="app-card-meta">
+                                                                            <span class="chip-text">vx.y</span>
+                                                                            <span class="chip-text">Text name</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="./detail--download.html" class="theme-btn btn-primary btn-sm download-btn">
+                                                            <div class="btn-text">Download</div>
+                                                            <div class="btn-icon">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M12 3.75V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                                    
+                                                            </div>                                                            
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex gap-4 items-start pb-2">
+                                                        <div class="flex-1">
+                                                            <div class="app-card">
+                                                                <div class="app-card-content">
+                                                                    <div class="app-card-thumb">
+                                                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-3.jpg" alt="Name of the app" class="ratio-media">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="app-card-info">
+                                                                        <h3 class="app-card-title">
+                                                                            <a href="./details.html">Name of the app</a>
+                                                                        </h3>
+                                                                        <div class="app-card-meta">
+                                                                            <span class="chip-text">vx.y</span>
+                                                                            <span class="chip-text">Text name</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="./detail--download.html" class="theme-btn btn-primary btn-sm download-btn">
+                                                            <div class="btn-text">Download</div>
+                                                            <div class="btn-icon">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M12 3.75V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>                                                                    
+                                                            </div>                                                            
+                                                        </a>
+                                                    </div>
+                                                    <a href="./search.html" class="text-black hover:text-primary">
+                                                        capture
+                                                    </a>
+                                                    <a href="./search.html" class="text-black hover:text-primary">
+                                                        caplise
+                                                    </a>
+                                                    <a href="./search.html" class="text-black hover:text-primary">
+                                                        capicity
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="modal-close">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.0597 12L19.2847 5.78435C19.4043 5.63862 19.4654 5.45363 19.4562 5.26534C19.4469 5.07705 19.368 4.89893 19.2347 4.76563C19.1014 4.63233 18.9232 4.55338 18.7349 4.54413C18.5467 4.53488 18.3617 4.596 18.2159 4.7156L12.0003 10.9406L5.78469 4.7156C5.63897 4.596 5.45397 4.53488 5.26568 4.54413C5.07739 4.55338 4.89927 4.63233 4.76597 4.76563C4.63267 4.89893 4.55372 5.07705 4.54447 5.26534C4.53522 5.45363 4.59634 5.63862 4.71594 5.78435L10.9409 12L4.71594 18.2156C4.5751 18.3578 4.49609 18.5498 4.49609 18.75C4.49609 18.9501 4.5751 19.1422 4.71594 19.2843C4.85929 19.423 5.0509 19.5004 5.25031 19.5004C5.44972 19.5004 5.64133 19.423 5.78469 19.2843L12.0003 13.0593L18.2159 19.2843C18.3593 19.423 18.5509 19.5004 18.7503 19.5004C18.9497 19.5004 19.1413 19.423 19.2847 19.2843C19.4255 19.1422 19.5045 18.9501 19.5045 18.75C19.5045 18.5498 19.4255 18.3578 19.2847 18.2156L13.0597 12Z"
+                                                    fill="white"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                                
+                            <div class="header-languages flex relative">
+                                <div class="theme-dropdown">
+                                    <div class="theme-dropdown-toggle cursor-pointer">
+                                        <div class="current-language flex items-center justify-between gap-2 text-black hover:text-primary fs-body-lg transition">
+                                            <div class="flex items-center gap-2 flex-1">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2001_5174)">
+                                                    <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F0F0F0"/>
+                                                    <path d="M2.06644 3.91064C1.28094 4.93264 0.688633 6.11057 0.34375 7.39021H5.54601L2.06644 3.91064Z" fill="#0052B4"/>
+                                                    <path d="M19.6553 7.39066C19.3104 6.11105 18.7181 4.93313 17.9326 3.91113L14.4531 7.39066H19.6553Z" fill="#0052B4"/>
+                                                    <path d="M0.34375 12.6084C0.688672 13.888 1.28098 15.0659 2.06645 16.0879L5.5459 12.6084H0.34375Z" fill="#0052B4"/>
+                                                    <path d="M16.0889 2.06649C15.0669 1.28098 13.889 0.688672 12.6094 0.34375V5.54598L16.0889 2.06649Z" fill="#0052B4"/>
+                                                    <path d="M3.91016 17.9316C4.93215 18.7171 6.11008 19.3094 7.38969 19.6543V14.4521L3.91016 17.9316Z" fill="#0052B4"/>
+                                                    <path d="M7.38965 0.34375C6.11004 0.688672 4.93211 1.28098 3.91016 2.06644L7.38965 5.54593V0.34375Z" fill="#0052B4"/>
+                                                    <path d="M12.6094 19.6543C13.889 19.3094 15.0669 18.7171 16.0889 17.9316L12.6094 14.4521V19.6543Z" fill="#0052B4"/>
+                                                    <path d="M14.4531 12.6084L17.9326 16.0879C18.7181 15.066 19.3104 13.888 19.6553 12.6084H14.4531Z" fill="#0052B4"/>
+                                                    <path d="M19.9154 8.69566H11.3044H11.3044V0.0846484C10.8774 0.0290625 10.4421 0 10 0C9.55785 0 9.12262 0.0290625 8.69566 0.0846484V8.69559V8.69563H0.0846484C0.0290625 9.12262 0 9.55793 0 10C0 10.4421 0.0290625 10.8774 0.0846484 11.3043H8.69559H8.69563V19.9154C9.12262 19.9709 9.55785 20 10 20C10.4421 20 10.8774 19.971 11.3043 19.9154V11.3044V11.3044H19.9154C19.9709 10.8774 20 10.4421 20 10C20 9.55793 19.9709 9.12262 19.9154 8.69566Z" fill="#D80027"/>
+                                                    <path d="M12.6094 12.6094L17.0717 17.0718C17.277 16.8666 17.4727 16.6521 17.6595 16.4298L13.8391 12.6094H12.6094V12.6094Z" fill="#D80027"/>
+                                                    <path d="M7.39207 12.6094H7.39199L2.92969 17.0717C3.13484 17.2769 3.34934 17.4727 3.57168 17.6595L7.39207 13.839V12.6094Z" fill="#D80027"/>
+                                                    <path d="M7.39 7.39117V7.39109L2.92766 2.92871C2.72242 3.13387 2.52664 3.34836 2.33984 3.5707L6.16027 7.39113H7.39V7.39117Z" fill="#D80027"/>
+                                                    <path d="M12.6094 7.39199L17.0718 2.92957C16.8666 2.72434 16.6521 2.52855 16.4298 2.3418L12.6094 6.16223V7.39199Z" fill="#D80027"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_2001_5174">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>                                                           
+                                                <div class="flex-1 header-languages-text">
+                                                    <span class="text-truncate-1 break-all text-black">English</span>
+                                                </div>
+                                            </div>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55806 7.05806C4.80214 6.81398 5.19786 6.81398 5.44194 7.05806L10 11.6161L14.5581 7.05806C14.8021 6.81398 15.1979 6.81398 15.4419 7.05806C15.686 7.30214 15.686 7.69786 15.4419 7.94194L10.4419 12.9419C10.1979 13.186 9.80214 13.186 9.55806 12.9419L4.55806 7.94194C4.31398 7.69786 4.31398 7.30214 4.55806 7.05806Z" fill="currentColor"/>
+                                            </svg>                                                        
+                                        </div>
+                                    </div>
+                                    <div class="theme-dropdown-content">
+                                        <ul class="theme-dropdown-list list-unstyled">
+                                            <li>
+                                                <a href="#!" class="p-4 flex items-center justify-between gap-2 text-black hover:text-primary fs-body-lg">
+                                                    <div class="flex items-center gap-2 flex-1">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_2061_10127)">
+                                                            <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#F0F0F0"/>
+                                                            <path d="M0 10C0 4.47719 4.47719 0 10 0C15.5228 0 20 4.47719 20 10" fill="#A2001D"/>
+                                                            </g>
+                                                            <defs>
+                                                            <clipPath id="clip0_2061_10127">
+                                                            <rect width="20" height="20" fill="white"/>
+                                                            </clipPath>
+                                                            </defs>
+                                                        </svg>                                                            
+                                                        <div class="flex-1">
+                                                            <span class="text-truncate-1 break-all text-black">Indonesia</span>
+                                                        </div>
+                                                    </div>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="currentColor"/>
+                                                    </svg>                                                        
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="p-4 flex items-center justify-between gap-2 text-black hover:text-primary fs-body-lg">
+                                                    <div class="flex items-center gap-2 flex-1">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_2061_10124)">
+                                                            <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#D80027"/>
+                                                            <path d="M10.0012 5.21777L11.0805 8.53922H14.5728L11.7474 10.592L12.8266 13.9134L10.0012 11.8607L7.17586 13.9134L8.25508 10.592L5.42969 8.53922H8.92203L10.0012 5.21777Z" fill="#FFDA44"/>
+                                                            </g>
+                                                            <defs>
+                                                            <clipPath id="clip0_2061_10124">
+                                                            <rect width="20" height="20" fill="white"/>
+                                                            </clipPath>
+                                                            </defs>
+                                                        </svg>                                                           
+                                                        <div class="flex-1">
+                                                            <span class="text-truncate-1 break-all text-black">Vietnam</span>
+                                                        </div>
+                                                    </div>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="currentColor"/>
+                                                    </svg>                                                        
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="header-user flex relative">
+                                <div class="theme-dropdown">
+                                    <div class="theme-dropdown-toggle cursor-pointer">
+                                        <div class="current-user flex items-center">
+                                            <div class="ratio-thumb ratio-1x1">
+                                                <img src="./assets/app/images/user/user-1.jpg" alt="SmallTownboi" class="ratio-media">
+                                            </div>                                                        
+                                        </div>
+                                    </div>
+                                    <div class="theme-dropdown-content">
+                                        <ul class="theme-dropdown-list list-unstyled">
+                                            <li>
+                                                <a href="#!" class="p-4 flex items-center justify-between gap-2 text-black hover:text-primary">
+                                                    <div class="flex items-center gap-2 flex-1">
+                                                        <div class="current-user flex items-center">
+                                                            <div class="ratio-thumb ratio-1x1">
+                                                                <img src="./assets/app/images/user/user-1.jpg" alt="SmallTownboi" class="ratio-media">
+                                                            </div>                                                        
+                                                        </div>                                                        
+                                                        <div class="flex-1 flex flex-col">
+                                                            <div class="text-truncate-1 break-all fs-body-lg text-black">SmallTownboi</div>
+                                                            <div class="text-truncate-1 break-all fs-caption text-gray">smalltownboi@gmail.com</div>
+                                                        </div>
+                                                    </div>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="currentColor"/>
+                                                    </svg>                                                        
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="p-4 flex items-center justify-between gap-2 text-black hover:text-primary">
+                                                    <div class="flex items-center gap-2 flex-1">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.47325 1.875H13.5268C14.2041 1.87499 14.7505 1.87499 15.1929 1.91114C15.6484 1.94835 16.0485 2.02699 16.4187 2.21561C17.0067 2.51521 17.4848 2.99327 17.7844 3.58128C17.973 3.95146 18.0516 4.35158 18.0889 4.80711C18.125 5.24953 18.125 5.79587 18.125 6.47323V13.5268C18.125 14.2041 18.125 14.7505 18.0889 15.1929C18.0516 15.6484 17.973 16.0485 17.7844 16.4187C17.4848 17.0067 17.0067 17.4848 16.4187 17.7844C16.0485 17.973 15.6484 18.0516 15.1929 18.0889C14.7505 18.125 14.2041 18.125 13.5268 18.125H6.47323C5.79587 18.125 5.24953 18.125 4.80711 18.0889C4.35158 18.0516 3.95146 17.973 3.58128 17.7844C2.99327 17.4848 2.51521 17.0067 2.21561 16.4187C2.02699 16.0485 1.94835 15.6484 1.91114 15.1929C1.87499 14.7505 1.87499 14.2041 1.875 13.5268V6.47325C1.87499 5.79588 1.87499 5.24953 1.91114 4.80711C1.94835 4.35158 2.02699 3.95146 2.2156 3.58128C2.51521 2.99327 2.99327 2.51521 3.58128 2.2156C3.95146 2.02699 4.35158 1.94835 4.80711 1.91114C5.24953 1.87499 5.79588 1.87499 6.47325 1.875ZM3.125 10.625V13.5C3.125 14.2104 3.12549 14.7056 3.15699 15.0911C3.18789 15.4693 3.2455 15.6866 3.32936 15.8512C3.50913 16.204 3.79596 16.4909 4.14877 16.6706C4.31337 16.7545 4.53067 16.8121 4.9089 16.843C5.29443 16.8745 5.78962 16.875 6.5 16.875H9.375V10.625H3.125ZM9.375 9.375H3.125V6.5C3.125 5.78962 3.12549 5.29443 3.15699 4.9089C3.18789 4.53067 3.2455 4.31337 3.32936 4.14877C3.50913 3.79596 3.79596 3.50913 4.14877 3.32936C4.31337 3.2455 4.53067 3.18789 4.9089 3.15699C5.29443 3.12549 5.78962 3.125 6.5 3.125H9.375V9.375ZM10.625 10.625V16.875H13.5C14.2104 16.875 14.7056 16.8745 15.0911 16.843C15.4693 16.8121 15.6866 16.7545 15.8512 16.6706C16.204 16.4909 16.4909 16.204 16.6706 15.8512C16.7545 15.6866 16.8121 15.4693 16.843 15.0911C16.8745 14.7056 16.875 14.2104 16.875 13.5V10.625H10.625ZM16.875 9.375H10.625V3.125H13.5C14.2104 3.125 14.7056 3.12549 15.0911 3.15699C15.4693 3.18789 15.6866 3.2455 15.8512 3.32936C16.204 3.50913 16.4909 3.79596 16.6706 4.14877C16.7545 4.31337 16.8121 4.53067 16.843 4.9089C16.8745 5.29443 16.875 5.78962 16.875 6.5V9.375Z" fill="#222222"/>
+                                                        </svg>                                                        
+                                                        <div class="flex-1">
+                                                            <span class="text-truncate-1 break-all text-black">Library</span>
+                                                        </div>
+                                                    </div>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="currentColor"/>
+                                                    </svg>                                                        
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="p-4 flex items-center justify-between gap-2 text-black hover:text-primary">
+                                                    <div class="flex items-center gap-2 flex-1">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.70977 2.33902L7.58431 2.4362C7.5945 2.43733 7.60454 2.43844 7.61444 2.43954C7.83025 2.4635 7.97765 2.47986 8.10941 2.50606C9.47381 2.77734 10.4946 3.91784 10.6136 5.30385C10.625 5.4377 10.625 5.58601 10.625 5.80315L10.625 5.83345C10.625 6.17863 10.3452 6.45845 10 6.45845C9.65482 6.45845 9.375 6.17863 9.375 5.83345C9.375 5.57464 9.37443 5.48412 9.36813 5.41073C9.29676 4.57913 8.68428 3.89483 7.86565 3.73206C7.7934 3.71769 7.7035 3.70713 7.44627 3.67855L6.5951 3.58398C5.94677 3.51194 5.49306 3.4619 5.13727 3.44778C4.78629 3.43386 4.58264 3.45818 4.42854 3.50749C3.92058 3.67004 3.50589 4.04121 3.28824 4.52811C3.22221 4.67582 3.17555 4.87554 3.15063 5.22591C3.12537 5.58109 3.125 6.03755 3.125 6.68986V13.3104C3.125 13.9627 3.12537 14.4192 3.15063 14.7743C3.17555 15.1247 3.22221 15.3244 3.28824 15.4721C3.50588 15.959 3.92058 16.3302 4.42854 16.4927C4.58263 16.5421 4.78629 16.5664 5.13727 16.5524C5.49307 16.5383 5.94678 16.4883 6.5951 16.4163L7.44627 16.3217C7.70342 16.2931 7.79342 16.2825 7.86564 16.2682C8.68428 16.1054 9.29676 15.4211 9.36813 14.5895C9.37443 14.5161 9.375 14.4256 9.375 14.1668C9.375 13.8216 9.65482 13.5418 10 13.5418C10.3452 13.5418 10.625 13.8216 10.625 14.1668L10.625 14.1971C10.625 14.4142 10.625 14.5625 10.6136 14.6964C10.4946 16.0824 9.47381 17.2229 8.10941 17.4942C7.97764 17.5204 7.83011 17.5368 7.61429 17.5607L6.70982 17.6612C6.09026 17.7301 5.59231 17.7854 5.18683 17.8015C4.77144 17.8179 4.40142 17.7965 4.04757 17.6833C3.20097 17.4124 2.50981 16.7937 2.14706 15.9822C1.99544 15.6431 1.93327 15.2777 1.90378 14.863C1.87499 14.4582 1.875 13.9572 1.875 13.3339V6.66635C1.875 6.04299 1.87499 5.542 1.90378 5.13722C1.93327 4.72256 1.99544 4.35718 2.14706 4.01799C2.50981 3.20649 3.20097 2.58787 4.04757 2.31696C4.40143 2.20372 4.77143 2.18229 5.18682 2.19877C5.5923 2.21485 6.09022 2.27018 6.70977 2.33902ZM12.8914 5.39151C13.1355 5.14743 13.5312 5.14743 13.7753 5.39151L17.9419 9.55818C18.186 9.80225 18.186 10.198 17.9419 10.4421L13.7753 14.6087C13.5312 14.8528 13.1355 14.8528 12.8914 14.6087C12.6473 14.3646 12.6473 13.9689 12.8914 13.7248L15.9911 10.6251H7.5C7.15482 10.6251 6.875 10.3453 6.875 10.0001C6.875 9.65494 7.15482 9.37512 7.5 9.37512H15.9911L12.8914 6.27539C12.6473 6.03132 12.6473 5.63559 12.8914 5.39151Z" fill="#222222"/>
+                                                        </svg>                                                        
+                                                        <div class="flex-1">
+                                                            <span class="text-truncate-1 break-all text-black">Sign out</span>
+                                                        </div>
+                                                    </div>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="currentColor"/>
+                                                    </svg>                                                        
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>                                 
+                            </div>
+                            <div class="header-search-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="body-content" id="site-content">
+            <section class="breadcrumb py-4 bg-gray">
+                <div class="container">
+                    <nav class="breadcrumb flex items-center flex-wrap gap-1">
+                        <a class="breadcrumb-item flex items-center flex-wrap gap-1 text-blue hover:text-blue-300" href="#">
+                            <span>Navigation 1</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 3.64645C10.5488 3.84171 10.5488 4.15829 10.3536 4.35355L6.70711 8L10.3536 11.6464C10.5488 11.8417 10.5488 12.1583 10.3536 12.3536C10.1583 12.5488 9.84171 12.5488 9.64645 12.3536L5.64645 8.35355C5.45118 8.15829 5.45118 7.84171 5.64645 7.64645L9.64645 3.64645C9.84171 3.45118 10.1583 3.45118 10.3536 3.64645Z" fill="#222222"/>
+                            </svg>                                
+                        </a>
+                        <a class="breadcrumb-item flex items-center flex-wrap gap-1 text-blue hover:text-blue-300" href="#">
+                            <span>Navigation 2</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 3.64645C10.5488 3.84171 10.5488 4.15829 10.3536 4.35355L6.70711 8L10.3536 11.6464C10.5488 11.8417 10.5488 12.1583 10.3536 12.3536C10.1583 12.5488 9.84171 12.5488 9.64645 12.3536L5.64645 8.35355C5.45118 8.15829 5.45118 7.84171 5.64645 7.64645L9.64645 3.64645C9.84171 3.45118 10.1583 3.45118 10.3536 3.64645Z" fill="#222222"/>
+                            </svg>                            
+                        </a>
+                        <span class="breadcrumb-item active text-gray" aria-current="page">Page</span>
+                    </nav>
+                </div>
+            </section>
+            <section class="py-8 lg:py-10">
+                <div class="container">
+                    <div class="section-heading flex justify-between gap-6 items-center mb-6">
+                        <h2 class="fs-h6 font-semibold">Games like Namegame</h2>
+                    </div>
+                    <div class="grid gap-x-4 md:gap-x-6 gap-y-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 mb-6">
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-1.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-2.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-3.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-4.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-5.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-6.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-7.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-8.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-9.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-10.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-11.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-12.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-13.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-14.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-15.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-16.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-17.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-18.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-19.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-20.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-21.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-22.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-23.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-card app-card-col stretch-content">
+                            <div class="app-card-content">
+                                <div class="app-card-thumb">
+                                    <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-24.jpg"
+                                            alt="Name of the app" class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-info">
+                                    <h3 class="app-card-title">
+                                        <a href="./details.html">Name of the app</a>
+                                    </h3>
+                                    <div class="app-card-meta">
+                                        <span class="chip-text">Text name</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <a href="#!" class="text-blue hover:text-blue-300 text-center">See more</a>
+                    </div>
+                </div>
+            </section> 
+        </div>
+        <!-- end body-content -->
+        <footer class="gap-12 lg:gap-6">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-widgets grid grid-cols-1 sm:grid-cols-2 lg:flex flex-wrap justify-between gap-x-6 gap-y-12">
+                        <div class="footer-widget-item flex flex-col gap-5 text-white justify-between">
+                            <a href="/index.html" class="site-logo flex items-center hover-opacity-75">
+                                <img src="./assets/app/images/main/logo-light.png" style="height: 44px;" alt="APK STORE" />
+                            </a>
+                            <ul class="list-unstyled mb-0 flex gap-2 items-center social-items">
+                                <li>
+                                    <a href="#!" class="social-item flex hover-opacity-75">
+                                        <img width="30" height="30" src="./assets/app/images/icons/general/social-icon-facebook.png" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="social-item flex hover-opacity-75">
+                                        <img width="30" height="30" src="./assets/app/images/icons/general/social-icon-instagram.png" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="social-item flex hover-opacity-75">
+                                        <img width="30" height="30" src="./assets/app/images/icons/general/social-icon-x.png" alt="X">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget-item flex flex-col gap-5 text-white">
+                            <div class="footer-widget-title fs-subtitle font-semibold">
+                                Products & Services
+                            </div>
+                            <div class="footer-widget-content">
+                                <ul class="list-unstyled mb-0 flex flex-col gap-5">
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            APKdone Installer
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            APK Downloader
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            Chrome Extension
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-widget-item flex flex-col gap-5 text-white">
+                            <div class="footer-widget-title fs-subtitle font-semibold">
+                                Company
+                            </div>
+                            <div class="footer-widget-content">
+                                <ul class="list-unstyled mb-0 flex flex-col gap-5">
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            Business Cooperation
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-widget-item flex flex-col gap-5 text-white">
+                            <div class="footer-widget-title fs-subtitle font-semibold">
+                                Legal
+                            </div>
+                            <div class="footer-widget-content">
+                                <ul class="list-unstyled mb-0 flex flex-col gap-5">
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            DMCA Disclaimer
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="block text-white hover:text-primary">
+                                            Term Of Use
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="text-white text-center sm:text-left">
+                        © 2024 Copyright  All right reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end main-container -->
+    <div class="theme-overlay"></div>
+
+    <!-- Library -->
+    <script src="./assets/vendors/jquery-2.2.4.min.js"></script>
+    
+    
+    <script src="./assets/vendors/slick-1.8.1/slick.min.js"></script>
+    <script src="./assets/vendors/fancybox/fancybox.umd.js"></script>
+    <!-- Current project -->
+    <script src="./assets/app/js/main.js"></script>
+</body>
+</html>
+
+
+
+    

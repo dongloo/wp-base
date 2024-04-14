@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPSTORE - Component</title>
+
+    <link rel="icon" href="./assets/app/images/main/favicon-circle.png" type="image/x-icon" />
+
+
+    <!-- prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <!-- <link rel="dns-prefetch" href="//appstore.com"> -->
+
+    <!-- preload font -->
+    <link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Regular.ttf' as='font' type='font/ttf' crossorigin>
+    <link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Medium.ttf' as='font' type='font/ttf' crossorigin>
+    <link rel='preload' href='./assets/app/fonts/PlusJakartaSans-SemiBold.ttf' as='font' type='font/ttf' crossorigin>
+    <link rel='preload' href='./assets/app/fonts/PlusJakartaSans-Bold.ttf' as='font' type='font/ttf' crossorigin>
+
+    <!-- preload logo -->
+    <link rel="preload" href="./assets/app/images/main/logo-dark.png" as="image" type="image/png">
+    <link rel="preload" href="./assets/app/images/main/logo-light.png" as="image" type="image/png">
+
+    <!-- CSS vendor-->
+    <link rel="stylesheet" href="./assets/vendors/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/fancybox/fancybox.css">
+    
+
+    <!-- Base -->
+    <link rel="stylesheet" href="./assets/app/css/base-main.css" />
+    <link rel="stylesheet" href="./assets/app/css/base-space.css" />
+    <link rel="stylesheet" href="./assets/app/css/base-project.css" />
+    <link rel="stylesheet" href="./assets/app/css/plugin.css" />
+    <link rel="stylesheet" href="./assets/app/css/menu.css" />
+    <!-- Current project -->
+    <link rel="stylesheet" href="./assets/app/css/style.css" />
+
+</head>
+
+<body>
+    <div class="main-container" id="page-wrapper">
+
+        <header></header>
+
+        <div class="body-content" id="site-content">
+            <section class="py-6">
+                <div class="container">
+
+                    <div class="py-12">
+                        <h1 class="text-center mb-6 fs-h2">FORM CONTROL</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-12">
+                            
+                        </div>
+                        <form class="contact-page-form flex flex-col gap-4 lg:gap-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">Normal <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control rounded-4" required value="" placeholder="enter your username">
+                                </div>
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">LG <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control rounded-4 theme-form-control-lg" required value="" placeholder="enter your username">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">Normal <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control rounded-full" required value="" placeholder="enter your username">
+                                </div>
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">LG <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control theme-form-control-lg rounded-full" required value="" placeholder="enter your username">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div class="theme-form-group theme-form-group-error">
+                                    <label for="" class="theme-form-label">Normal <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control rounded-full" required value="" placeholder="enter your username">
+                                </div>
+                                <div class="theme-form-group theme-form-group-error">
+                                    <label for="" class="theme-form-label">LG <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control theme-form-control-lg rounded-full" required value="" placeholder="enter your username">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">Normal <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control rounded-full" required value="" placeholder="enter your username" disabled>
+                                </div>
+                                <div class="theme-form-group">
+                                    <label for="" class="theme-form-label">LG <span class="text-danger">*</span></label>
+                                    <input type="text" class="theme-form-control theme-form-control-lg rounded-full" required value="" placeholder="enter your username" disabled>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="py-12">
+                        <h1 class="text-center mb-6 fs-h2">APP CATEGORY</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-12">
+                            <a href="./category.html" class="app-category-item flex items-center gap-2 py-4">
+                                <div class="app-category-item-thumb">
+                                    <div class="ratio-thumb ratio-1x1">
+                                        <img src="./assets/app/images/icons/categories/action.svg" alt="Name of category" class="ratio-media">
+                                    </div>
+                                </div>
+                                <div class="app-category-item-title fs-body-lg text-black flex-1 text-truncate-1 break-all">Name of category</div>
+                            </a>
+                            <a href="./category.html" class="app-category-item flex items-center gap-2 py-4">
+                                <div class="app-category-item-thumb">
+                                    <div class="ratio-thumb ratio-1x1">
+                                        <img src="./assets/app/images/icons/categories/adventure.svg" alt="Name of category" class="ratio-media">
+                                    </div>
+                                </div>
+                                <div class="app-category-item-title fs-body-lg text-black flex-1 text-truncate-1 break-all">Name of category</div>
+                            </a>
+                            <a href="./category.html" class="app-category-item flex items-center gap-2 py-4">
+                                <div class="app-category-item-thumb">
+                                    <div class="ratio-thumb ratio-1x1">
+                                        <img src="./assets/app/images/icons/categories/arcade.svg" alt="Name of category" class="ratio-media">
+                                    </div>
+                                </div>
+                                <div class="app-category-item-title fs-body-lg text-black flex-1 text-truncate-1 break-all">Name of category</div>
+                            </a>
+                            <a href="./category.html" class="app-category-item flex items-center gap-2 py-4">
+                                <div class="app-category-item-thumb">
+                                    <div class="ratio-thumb ratio-1x1">
+                                        <img src="./assets/app/images/icons/categories/art-and-design.svg" alt="Name of category" class="ratio-media">
+                                    </div>
+                                </div>
+                                <div class="app-category-item-title fs-body-lg text-black flex-1 text-truncate-1 break-all">Name of category</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-12">
+                        <h1 class="text-center mb-6 fs-h2">Badge</h1>
+                        <div class="flex flex-wrap gap-x-6 gap-y-12">
+                            <a href="./category.html" class="badge badge-info inline-flex items-center">
+                                <div class="badge-title fs-body text-truncate-1">XAPK</div>
+                            </a>
+                            <a href="./category.html" class="badge badge-success inline-flex items-center">
+                                <div class="badge-title fs-body text-truncate-1">APK</div>
+                            </a>
+                            <a href="./category.html" class="badge inline-flex items-center hover:badge-primary">
+                                <div class="badge-title fs-body text-truncate-1">Content</div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05806 4.55806C7.30214 4.31398 7.69786 4.31398 7.94194 4.55806L12.9419 9.55806C13.186 9.80214 13.186 10.1979 12.9419 10.4419L7.94194 15.4419C7.69786 15.686 7.30214 15.686 7.05806 15.4419C6.81398 15.1979 6.81398 14.8021 7.05806 14.5581L11.6161 10L7.05806 5.44194C6.81398 5.19786 6.81398 4.80214 7.05806 4.55806Z" fill="#707070"/>
+                                </svg>                                    
+                            </a>
+                            <a href="./category.html" class="badge inline-flex items-center">
+                                <div class="badge-title fs-body text-truncate-1">Content</div>
+                            </a>
+                            <a href="./category.html" class="badge badge-active inline-flex items-center">
+                                <div class="badge-title fs-body text-truncate-1">Content</div>
+                            </a>
+                            <a href="./category.html" class="badge badge-app inline-flex items-center">
+                                <div class="badge-thumb">
+                                    <div class="ratio-thumb ratio-1x1">
+                                        <img src="./assets/app/images/cover/app-thumb/app-thumb-1.jpg" alt="Name of app/game" class="ratio-media">
+                                    </div>
+                                </div>
+                                <div class="badge-title fs-body text-truncate-1">Name of app/game</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-12">
+                        <h1 class="text-center mb-6 fs-h2">BUTTON</h1>
+                        <div class="flex flex-wrap items-start gap-x-6 gap-y-12">
+                            <a href="./detail--download.html" class="theme-btn btn-primary btn-lg">
+                                <div class="btn-text">Sign Up</div>
+                            </a>
+                            <a href="./detail--download.html" class="theme-btn btn-primary">
+                                <div class="btn-text">Download</div>
+                            </a>
+                            <a href="./detail--download.html" class="theme-btn btn-primary btn-sm">
+                                <div class="btn-text">Download</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="py-12">
+                        <h1 class="text-center mb-6 fs-h2">CARD</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12">
+                            <div class="app-card sticky-content app-card-rounded-lg">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-1.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card sticky-content app-card-rounded-lg categories-last">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-1.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card sticky-content">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-2.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card sticky-content categories-last">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-2.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                            <span class="meta-price"><del>$24.99</del></span>
+                                            <span class="meta-label meta-label--free">FREE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-3.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-3.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card categories-last">
+                                <div class="app-card-cover">
+                                    <a href="./details.html" class="ratio-thumb ratio-2x1 hover-opacity-90">
+                                        <img src="./assets/app/images/cover/app-cover/app-cover-3.jpg" alt="Name of the app"
+                                            class="ratio-media">
+                                    </a>
+                                </div>
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-3.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card">
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-4.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                            <span class="meta-price"><del>$24.99</del></span>
+                                            <span class="meta-label meta-label--free">FREE</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card categories-last">
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-4.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="app-card app-card-thumb-lg stretch-content">
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-6.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card app-card-thumb-lg stretch-content categories-last">
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-6.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-categories">
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                            <a href="./category.html" class="chip-category">Category</a>
+                                        </div>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">vx.y</span>
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-card app-card-col stretch-content">
+                                <div class="app-card-content">
+                                    <div class="app-card-thumb">
+                                        <a href="./details.html" class="ratio-thumb ratio-1x1 hover-opacity-90">
+                                            <img src="./assets/app/images/cover/app-thumb/app-thumb-5.jpg"
+                                                alt="Name of the app" class="ratio-media">
+                                        </a>
+                                    </div>
+                                    <div class="app-card-info">
+                                        <h3 class="app-card-title">
+                                            <a href="./details.html">Name of the app</a>
+                                        </h3>
+                                        <div class="app-card-meta">
+                                            <span class="chip-text">Text name</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+        </div>
+
+        <!-- end body-content -->
+        <footer></footer>
+    </div>
+
+    <!-- end main-container -->
+
+    <div class="theme-overlay"></div>
+
+
+    <!-- Library -->
+    <script src="./assets/vendors/jquery-2.2.4.min.js"></script>
+    
+    
+    <script src="./assets/vendors/slick-1.8.1/slick.min.js"></script>
+    <script src="./assets/vendors/fancybox/fancybox.umd.js"></script>
+    <!-- Current project -->
+    <script src="./assets/app/js/main.js"></script>
+</body>
+
+</html>
