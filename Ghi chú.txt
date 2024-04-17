@@ -1,1 +1,18 @@
+bloginfo() và get_bloginfo()
+Trong đó **$info** là tham số các dữ liệu cần lấy:
 
+- **‘name’** : Hiển thị tên của trang web – ví dụ: *Huy Kira ‘S Blog*
+- **‘siteurl’** : Hiển thị địa chỉ trang chủ URL Website – ví dụ: *https://huykira.net/*
+- **‘description’** : Hiển thị mô tả của trang web – ví dụ: *HuyKira ‘S Blog Download layout website miễn phí – Thiết kế layout website – Thiết web website*
+- **‘wpurl’** : Hiển thị địa chỉ url của trang web được thiết lập **url** từ bảng **wp_options** của database – ví dụ: https://huykira.net/
+- **‘url’** : Hiển thị địa chỉ của trang Web – ví dụ: https://huykira.net/
+- **‘admin_email’** : Hiển thị Email quản trị được thiết lập trong Cài đặt > Cài đặt chung – ví dụ: huykira@gmail.com
+- **‘charset’** : Hiển thị kiểu Charset Encoding của website ví dụ “UTF-8”
+- **‘version’** : Hiển thị phiên bản WordPress hiện tại đang sử dụng
+- **‘html_type’** : Hiển thị kiểu Content Type của WordPress mặc định là “text/html”
+- **‘language’** : Hiển thị ngôn ngữ site đang sử dụng
+- **‘stylesheet_url’** : Hiển thị địa chỉ đến file style.css – ví dụ: *https://huykira.net/wp-content/themes/huykiraver2/style.css*
+- **‘stylesheet_directory’** : Hiển thị link đến thư mục theme hiện tại – ví dụ: ví dụ: *https://huykira.net/wp-content/themes/huykiraver2*
+- **‘rss_url’** : Hiển thị địa chỉ RSS 0.92 feed
+- **‘rss2_url’** : Hiển thị the RSS 2.0 feed
+- template_directory
