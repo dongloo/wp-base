@@ -1,6 +1,6 @@
-#File version
+# File version
 
-##filemtime
+## filemtime
 <code>
 $css_ver = date("ymd-Gis", filemtime( get_stylesheet_directory() . '/assets/main/main.css' ));
 $js_ver = date("ymd-Gis", filemtime( get_stylesheet_directory() . '/assets/main/main.js' ));
@@ -18,7 +18,7 @@ Lưu ý:
 * Nếu bạn xử dụng các plugin cache, thì hãy xóa cache để cập nhât nữa nhé!
 </code>
 
-##Date
+## Date
 <code>
 <?=date('Y-m-d-h-i-s')?>
 </code>
