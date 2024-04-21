@@ -19,6 +19,4 @@ Lưu ý:
 </code>
 
 ## Date
-<code>
-<?=date('Y-m-d-h-i-s')?>
-</code>
+<code><?=date('Y-m-d-h-i-s')?></code>
