@@ -1,0 +1,18 @@
+.page-title-section {
+	background-color: #fffbf0;
+	.page-title-inner {
+		padding: 40px 12px 40px 12px;
+        @include minWidth(992px){
+            padding: 60px 12px 60px 12px;
+        }
+		.page-title {
+			text-align: center;
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 0;
+            @include minWidth(992px){
+                font-size: 36px;
+            }
+		}
+	}
+}

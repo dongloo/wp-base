@@ -1,0 +1,28 @@
+.partner{
+    background-color: $white;
+    padding: 20px 0 42px 0;
+    @include minWidth(768px){
+        padding: 60px 0 80px 0;
+    }
+    @include minWidth(992px){
+        padding: 80px 0 120px 0;
+    }
+    @include minWidth(1200px){
+        padding: 100px 0 160px 0;
+    }
+    .partner-item{
+        .partner-item-ratio{
+            img{
+                max-width: 80px;
+                max-height: 24px;
+                margin: 0 auto;
+                width: auto;
+                height: auto;
+                @include minWidth(768px){
+                    max-width: 140px;
+                    max-height: 42px;
+                }
+            }
+        }
+    }
+}

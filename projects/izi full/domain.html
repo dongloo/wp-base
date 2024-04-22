@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Izi Web - Chọn tên miền</title>
+    <meta name="description" content="Izi Web - Chọn tên miền">
+    <link rel="canonical" href="canonical_url">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="Assets/App/images/brand/favicon.svg" type="image/x-icon" />
+
+        <link href="Assets/App/fonts/Montserrat/css/Montserrat.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/App/fonts/Inter/css/Inter.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Lib/OwlCarousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Lib/OwlCarousel/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/App/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <div id="page-wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header-inner">
+                        <div class="header-left">
+                            <a title="Home page" href="index.html" class="logo">
+                                <img src="./Assets/App/images/brand/logo.svg" alt="izi">
+                            </a>
+                        </div>
+                        <div class="header-right">
+                            <div class="menu">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a title="" class="" href="#">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a title="" class="" href="#">Về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a title="" class="" href="#">BLog</a>
+                                    </li>
+                                    <li>
+                                        <a title="" class="" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hamburger hamburger--slider js-hamburger">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="site-content">
+                <div id="main">
+                    <section class="header-step">
+                        <div class="container">
+                            <div class="header-step-inner">
+                                <h2 class="header-step-title">
+                                    Tạo Website miễn phí
+                                </h2>
+                                <div class="header-step-wizard">
+                                    <div class="header-step-wizard-item header-step-done">
+                                        <div class="header-step-wizard-item-inner">
+                                            <div class="header-step-wizard-item-number">
+                                                <span>1</span>
+                                            </div>
+                                            <div class="header-step-wizard-item-title">
+                                                <span>Chọn mẫu</span> <span>giao diện</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="header-step-line"></span>
+                                    <div class="header-step-wizard-item header-step-done">
+                                        <div class="header-step-wizard-item-inner">
+                                            <div class="header-step-wizard-item-number">
+                                                <span>2</span>
+                                            </div>
+                                            <div class="header-step-wizard-item-title">
+                                                <span>Chọn gói</span> <span>hosting</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="header-step-line"></span>
+                                    <div class="header-step-wizard-item header-step-current">
+                                        <div class="header-step-wizard-item-inner">
+                                            <div class="header-step-wizard-item-number">
+                                                <span>3</span>
+                                            </div>
+                                            <div class="header-step-wizard-item-title">
+                                                <span>Chọn</span> <span>tên miền</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="domain-section">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-body-group">
+                                        <div class="card-body-content">
+                                            <div class="domain-check" data-validate="false">
+                                                <div class="domain-check-radio">
+                                                    <input class="domain-check-input" type="radio"
+                                                        name="flexRadioDefault" id="current-domain">
+                                                    <label class="domain-check-label" for="current-domain">
+                                                        Có sẵn tên miền
+                                                    </label>
+                                                    <span class="domain-check-checkmark"></span>
+                                                </div>
+                                                <div class="domain-check-content" style="display: none">
+                                                    <div class="domain-content-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-small"
+                                                                placeholder="Nhập tên miền có sẵn" id="current-domain-input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="domain-check" data-validate="false">
+                                                <div class="domain-check-radio">
+                                                    <input class="domain-check-input" type="radio"
+                                                        name="flexRadioDefault" id="new-domain">
+                                                    <label class="domain-check-label" for="new-domain">
+                                                        Chọn một tên miền mới
+                                                    </label>
+                                                    <span class="domain-check-checkmark"></span>
+                                                </div>
+                                                <div class="domain-check-content" style="display: none">
+                                                    <div class="domain-content-input">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-small"
+                                                                placeholder="Nhập tên miền mới"
+                                                                id="new-domain-input-check">
+                                                            <button
+                                                                class="btn-theme btn-theme-sm shadow-none text-transform-none letter-spacing-normal"
+                                                                type="button" id="new-domain-btn-check" disabled>Kiểm
+                                                                tra</button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="check-new-domain" style="display: none">
+                                                        <h4 class="check-new-domain-title">Kết quả kiểm tra tên miền
+                                                        </h4>
+                                                        <div class="check-new-domain-grid">
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.com
+                                                                    </div>
+                                                                    <div class="domain-grid-header-price">
+                                                                        199,000đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="domain-grid-body">
+                                                                    <div class="domain-grid-body-left">
+                                                                        <p class="domain-grid-title">Giá chỉ còn 99k cho năm đầu tiên nếu đăng ký 2 năm</p>
+                                                                        <p class="domain-grid-des">Giá trên chưa bao gồm VAT</p>
+                                                                    </div>
+                                                                    <button href="#"
+                                                                        class="btn-theme btn-theme-success-outline btn-rounded btn-theme-sm shadow-none select-domain-to-buy-btn" data-title="Chọn mua"></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.vn
+                                                                    </div>
+                                                                    <div class="domain-grid-header-price">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="domain-grid-body">
+                                                                    <div class="domain-grid-body-left">
+                                                                        <p class="domain-grid-title">Tên miền đã được đăng ký</p>
+                                                                    </div>
+                                                                    <button href="#"
+                                                                        class="btn-theme btn-theme-secondary btn-rounded btn-theme-sm shadow-none select-domain-to-buy-btn">Chọn mua</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.net
+                                                                    </div>
+                                                                    <div class="domain-grid-header-price">
+                                                                        211,000đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="domain-grid-body">
+                                                                    <div class="domain-grid-body-left">
+                                                                        <p class="domain-grid-title">Giá chỉ còn 99k cho năm đầu tiên nếu đăng ký 2 năm</p>
+                                                                        <p class="domain-grid-des">Giá trên chưa bao gồm VAT</p>
+                                                                    </div>
+                                                                    <button href="#"
+                                                                        class="btn-theme btn-theme-success-outline btn-rounded btn-theme-sm shadow-none select-domain-to-buy-btn" data-title="Chọn mua"></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.tech
+                                                                    </div>
+                                                                    <button href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.org
+                                                                    </div>
+                                                                    <a href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.edu
+                                                                    </div>
+                                                                    <button href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.pro
+                                                                    </div>
+                                                                    <button href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.store
+                                                                    </div>
+                                                                    <button href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="domain-grid-item">
+                                                                <div class="domain-grid-header domain-grid-header-only ">
+                                                                    <div class="domain-grid-header-title">
+                                                                        Hungthinhphatjsc.online
+                                                                    </div>
+                                                                    <button href="#"
+                                                                    class="btn-theme btn-theme-warning-outline btn-rounded btn-theme-sm shadow-none">Kiểm tra</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="show-domain-more">
+                                                            <div class="show-domain-more-btn">
+                                                                <svg width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M3.78902 4.88226C4.17115 5.23193 4.75705 5.23193 5.13918 4.88226L8.02916 2.23774C8.7023 1.62178 8.26652 0.5 7.35408 0.5H1.57413C0.66169 0.5 0.225898 1.62177 0.899041 2.23774L3.78902 4.88226Z"
+                                                                        fill="#858592" />
+                                                                </svg>
+                                                                <span>Tất cả</span>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="domain-check" data-validate="false">
+                                                <div class="domain-check-radio">
+                                                    <input class="domain-check-input" type="radio"
+                                                        name="flexRadioDefault" id="free-domain">
+                                                    <label class="domain-check-label" for="free-domain">
+                                                        Chọn tên miền miễn phí
+                                                    </label>
+                                                    <span class="domain-check-checkmark"></span>
+                                                </div>
+                                                <div class="domain-check-content" style="display: none">
+                                                    <div class="domain-content-input domain-content-input-free">
+                                                        <div class="domain-content-input-wrapper">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control form-control-small"
+                                                                    placeholder="Nhập tên miền" id="free-domain-input">
+                                                            </div>
+                                                            <span class="domain-content-input-free-name">.anthinhphat.com</span>
+                                                        </div>
+                                                        <p class="domain-content-input-free-des">Nhập các ký tự từ a-z, tối đa 10 ký tự</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-group">
+                                        <div class="card-body-action">
+                                            <button href="#"
+                                                class="btn-theme btn-theme-secondary btn-rounded btn-theme-sm shadow-none">Trở
+                                                lại</button>
+                                            <button href="#"
+                                                class="btn-theme btn-theme btn-rounded btn-theme-sm shadow-none btn-domain-next"
+                                                disabled>Tiếp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="footer-top">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <div class="footer-group">
+                                        <div class="footer-widget">
+                                            <h4 class="footer-widget-title brand-title">EziWeb</h4>
+                                            <ul>
+                                                <li>
+                                                    <p>Số 16 ngõ 18 đường Nguyễn Khuyến - Văn Quán- Hà Đông Hà Nội</p>
+                                                </li>
+                                                <li>
+                                                    <p>Monday - Friday, 8AM - 5PM</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="footer-group">
+                                        <div class="row">
+                                            <div class="col-7 col-lg-6">
+                                                <div class="footer-widget">
+                                                    <h4 class="footer-widget-title">Liên kết</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Chính sách bảo mật</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-lg-6">
+                                                <div class="footer-widget">
+                                                    <h4 class="footer-widget-title">Điều hướng</h4>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Trang chủ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Về chúng tôi</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Blog</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="footer-group">
+                                        <div class="footer-widget-social">
+                                            <div class="footer-widget">
+                                                <h4 class="footer-widget-title">HỖ TRỢ KHÁCH HÀNG</h4>
+                                                <ul>
+                                                    <li>
+                                                        <a href="tel:+84829825599">
+                                                            <img src="./Assets/App/images/social/call.svg"
+                                                                class="footer-widget-icon">
+                                                            <span>0829825599</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="maitlto:info@anthinhphatjsc.com">
+                                                            <img src="./Assets/App/images/social/message.svg"
+                                                                class="footer-widget-icon">
+                                                            <span>info@anthinhphatjsc.com</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <ul class="footer-social-items">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./Assets/App/images/social/twitter.svg"
+                                                            class="footer-social-icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./Assets/App/images/social/facebook.svg"
+                                                            class="footer-social-icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./Assets/App/images/social/instagram.svg"
+                                                            class="footer-social-icon">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p class="copyright">Copyright © 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./Assets/Lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="./Assets/Lib/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="./Assets/Lib/jquery.counterup.js" type="text/javascript"></script>
+    <script src="./Assets/Lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./Assets/Lib/OwlCarousel/owl.carousel.js" type="text/javascript"></script>
+    <script src="./Assets/App/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

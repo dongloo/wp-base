@@ -1,0 +1,43 @@
+.card{
+    background: $white;
+    -webkit-box-shadow: 0px 6px 50px rgba(168, 157, 3, 0.1);
+            box-shadow: 0px 6px 50px rgba(168, 157, 3, 0.1);
+    border-radius: 8px;
+    border: 0;
+    margin: 0 auto;
+    &.card-bordered{
+        border: 1px solid #DFDBD4;
+    }
+    .card-body{
+        padding: 51px 67px 70px 67px;
+        .card-body-group{
+            margin-bottom: 72px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .card-title{
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+            .card-body-content{
+
+            }
+            .card-body-action{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                        justify-content: flex-end;
+            }
+
+        }
+        .card-body-space{
+
+        }
+    }
+}

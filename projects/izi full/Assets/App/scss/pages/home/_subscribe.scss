@@ -1,0 +1,116 @@
+.subscribe {
+	padding: 36px 0 56px 0;
+	position: relative;
+	background-image: url("../images/pages/home/subscribe/subscribe-bg.svg");
+	background-size: cover;
+	background-position: top center;
+	@include minWidth(768px) {
+		padding: 45px 0 62px 0;
+	}
+    .btn-theme{
+        background-color: $btn-primary;
+    }
+	.subscribe-inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		gap: 40px;
+		@include minWidth(768px) {
+			gap: 50px;
+		}
+		.subscribe-title {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			gap: 18px;
+			img {
+				width: 44px;
+				height: 44px;
+				@include minWidth(768px) {
+					width: 60px;
+					height: 60px;
+				}
+				-o-object-fit: contain;
+				object-fit: contain;
+				-o-object-position: center;
+				object-position: center;
+			}
+			.section-title {
+				color: $white;
+			}
+		}
+		.subscribe-form {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			gap: 40px;
+			.form-group {
+				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				margin-bottom: 0;
+
+				.form-control {
+					width: 100%;
+					max-width: 504px;
+					font-size: 13px;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 0.2em;
+					text-align: center;
+					border: 0;
+					&::-webkit-input-placeholder {
+						color: $text-placeholder;
+					}
+					&::-moz-placeholder {
+						color: $text-placeholder;
+					}
+					&:-ms-input-placeholder {
+						color: $text-placeholder;
+					}
+					&::-ms-input-placeholder {
+						color: $text-placeholder;
+					}
+					&::placeholder {
+						color: $text-placeholder;
+					}
+					&:focus {
+						outline: none;
+						-webkit-box-shadow: none;
+						box-shadow: none;
+					}
+					padding: 16px;
+					@include minWidth(768px) {
+						font-size: 15px;
+						padding: 20px 24px;
+					}
+				}
+			}
+		}
+	}
+}

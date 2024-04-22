@@ -1,0 +1,69 @@
+.table-wrapper{
+    overflow: hidden;
+    border: 1px solid #858592;
+    border-radius: 8px;
+    .table-inner{
+        overflow: auto;
+        .table{
+            overflow: auto;
+            margin-bottom: 0;
+            thead{
+                border-color: #858592;
+                tr{
+                    border: 0;
+                    th{
+                        padding: 10px 5px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        background-color: #E2E2E2;
+                        border: 0;
+                        border-right: 1px solid #858592;
+                        vertical-align: middle;
+                        white-space: nowrap;
+                        @include minWidth(992px) {
+                            padding: 10px 12px;
+                            font-size: 16px;
+                        }
+                        &:last-child{
+                            border-right: 0;
+                        }
+                    }
+                    & + tr{
+                        th{
+                            border-top: 1px solid #858592;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border: 0;
+                    td{
+                        padding: 10px 5px;
+                        border: 0;
+                        border-right: 1px solid #858592;
+                        border-top: 1px solid #858592;
+                        font-size: 10px;
+                        &:last-child{
+                            border-right: 0;
+                        }
+                        vertical-align: middle;
+                        @include minWidth(992px) {
+                            padding: 10px 12px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd){
+    td{
+        background-color: #F5F5F5;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+}

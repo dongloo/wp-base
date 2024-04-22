@@ -1,0 +1,92 @@
+form{
+    .form-group{
+        margin-bottom: 24px;
+        @include minWidth(992px) {
+            margin-bottom: 40px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .form-label{
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.7;
+            font-weight: bold;
+            @include minWidth(992px) {
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+            .label-required{
+                color: #EE3227;
+            }
+
+        }
+        .invalid-feedback{
+            color: $primary-light;
+            font-size: 12px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .form-btn-group{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 12px;
+            @include minWidth(992px) {
+                gap: 32px;
+            }
+        }
+    }
+}
+
+.form-control{
+    border-color: $text-muted;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: $text-body;
+    font-weight: 500;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    &::-webkit-input-placeholder{
+        color: $text-muted;
+    }
+    &::-moz-placeholder{
+        color: $text-muted;
+    }
+    &:-ms-input-placeholder{
+        color: $text-muted;
+    }
+    &::-ms-input-placeholder{
+        color: $text-muted;
+    }
+    &::placeholder{
+        color: $text-muted;
+    }
+    &:focus{
+        border-color: $text-muted;
+    }
+    &.is-invalid{
+        border-color: $primary-light;
+        background-image: none;
+        padding-right: .75rem;
+        &:focus{
+            border-color: $primary-light;
+        }
+    }
+
+    &.form-control-small{
+        padding: 12px 24px;
+    }
+
+    @include minWidth(992px) {
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+}

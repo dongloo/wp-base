@@ -1,0 +1,116 @@
+.checkout-section {
+	@include minWidth(576px) {
+		background-color: #fafafa;
+		padding: 40px 0 100px;
+	}
+	@include minWidth(992px) {
+		background-color: #fafafa;
+		padding: 73px 0 179px;
+	}
+	.container {
+		@include maxWidth(576px) {
+			padding: 0;
+		}
+	}
+	.card {
+		max-width: 1000px;
+		@include maxWidth(576px) {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+            border-radius: 0;
+			.card-body {
+				padding: 40px 0;
+				.card-body-group {
+					margin-bottom: 32px;
+					.card-title {
+						padding: 0 16px;
+						text-align: center;
+						font-size: 18px;
+						margin-bottom: 24px;
+					}
+					.card-body-content {
+						padding: 0 16px;
+					}
+					.card-body-action {
+						padding: 16px 16px 0 16px;
+						.btn-theme {
+							display: block;
+							width: 100%;
+						}
+					}
+				}
+				.card-body-space {
+					display: block;
+					width: 100%;
+					height: 12px;
+					background: #f4f4f4;
+					margin-bottom: 32px;
+				}
+			}
+		}
+	}
+	.payment-method-items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 16px;
+		@include minWidth(992px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto;
+			gap: 40px;
+		}
+		.payment-method-item {
+			display: block;
+			position: relative;
+			padding: 10px;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			@include minWidth(992px) {
+				padding: 16px;
+			}
+			input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				z-index: 3;
+				width: 100%;
+				height: 100%;
+				&:checked {
+					& ~ .checkmark {
+						background-color: rgba(238, 50, 39, 0.2);
+						border-color: $primary-light;
+					}
+				}
+			}
+			img {
+				position: relative;
+				z-index: 2;
+			}
+			.checkmark {
+				position: absolute;
+				border: 1px solid $text-muted;
+				border-radius: 8px;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		}
+	}
+}
