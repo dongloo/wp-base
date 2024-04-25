@@ -115,3 +115,16 @@ Sau khi bạn nhấp vào nút Sync, trên giao diện hiện tại các giá tr
 
 Sync trong Loco Translate
 Chúc các bạn thành công khi dịch giao diện WordPress nhé.
+
+# Custom menu
+```php
+function modify_nav_menu_items($items, $args) {
+    foreach ($items as &$item) {
+        if ($item->url && strpos($item->url, '/abc/') === 0) {  // Kiểm tra xem URL có bắt đầu bằng '/abc/' không
+            $item->url = home_url($item->url);
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'modify_nav_menu_items', 10, 2);
+```
