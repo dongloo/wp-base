@@ -118,13 +118,29 @@ Chúc các bạn thành công khi dịch giao diện WordPress nhé.
 
 # Custom menu
 ```php
-function modify_nav_menu_items($items, $args) {
-    foreach ($items as &$item) {
-        if ($item->url && strpos($item->url, '/abc/') === 0) {  // Kiểm tra xem URL có bắt đầu bằng '/abc/' không
-            $item->url = home_url($item->url);
+function filter_demo_center_query($query) {
+    // Chỉ thực thi thay đổi truy vấn trong trang lưu trữ của custom post type 'demo-center'
+    // và chỉ khi không phải là truy vấn quản trị và là truy vấn chính
+    if (!is_admin() && $query->is_main_query() && is_post_type_archive('demo-center')) {
+        // Lấy giá trị của tham số 'featured-category' từ URL
+        $featured_category_id = isset($_GET['featured-category']) ? intval($_GET['featured-category']) : 0;
+
+        // Kiểm tra nếu 'featured-category' có giá trị và lớn hơn 0
+        if ($featured_category_id > 0) {
+            // Thiết lập các tham số truy vấn để lọc theo taxonomy 'featured-category'
+            $tax_query = array(
+                array(
+                    'taxonomy' => 'featured-category',
+                    'field'    => 'term_id',
+                    'terms'    => $featured_category_id
+                )
+            );
+
+            // Gán tax_query vào truy vấn hiện tại
+            $query->set('tax_query', $tax_query);
         }
     }
-    return $items;
 }
-add_filter('wp_nav_menu_objects', 'modify_nav_menu_items', 10, 2);
+
+add_action('pre_get_posts', 'filter_demo_center_query');
 ```
