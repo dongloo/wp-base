@@ -116,7 +116,7 @@ Sau khi bạn nhấp vào nút Sync, trên giao diện hiện tại các giá tr
 Sync trong Loco Translate
 Chúc các bạn thành công khi dịch giao diện WordPress nhé.
 
-# Browser
+# Other code
 ```php
 $categories = get_the_category();
 if ( ! empty( $categories ) ) {
@@ -140,4 +140,15 @@ if (!is_wp_error($terms) && !empty($terms)) {
 } else {
     echo 'Không tìm thấy term hoặc có lỗi xảy ra.';
 }
+```
+
+# Chặn kết nối kiểm tra phiên bản plugin/theme/core
+```php
+define( 'WP_HTTP_BLOCK_EXTERNAL', true );
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+define( 'WP_AUTO_UPDATE_CORE', false );
+```
+* Trường hợp bạn muốn cho phép kết nối ra vài địa chỉ máy chủ mà vẫn muốn chặn với các kết nối ra máy chủ khác thì có thể chèn thêm đoạn sau để cho phép kết nối (nên làm):
+```php
+define('WP_ACCESSIBLE_HOSTS', 'api.wordpress.org ');
 ```
