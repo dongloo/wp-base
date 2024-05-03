@@ -117,9 +117,12 @@ Sync trong Loco Translate
 Chúc các bạn thành công khi dịch giao diện WordPress nhé.
 
 # Browser
-* Với Chrome 116+: Bật TLS 1.3 hybridized Kyber support (`enable-tls13-kyber`) trong `chrome://flags`.
-* Với Firefox 124+: Bật `security.tls.enable_kyber` trong `about:config`.
-
-Done.
-
-Cách này mọi người nên dùng chung với DNS-over-HTTPS có sẵn trong trình duyệt để tránh bị giả mạo DNS nhé.
+```php
+$primary_category_id = yoast_get_primary_term_id( 'category', get_the_ID() );
+if ( ! empty( $primary_category_id ) ) {
+    $category = get_category( $primary_category_id );
+    if ( ! is_wp_error( $category ) ) {
+        echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a>';
+    }
+}
+```
