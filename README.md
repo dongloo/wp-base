@@ -118,11 +118,26 @@ Chúc các bạn thành công khi dịch giao diện WordPress nhé.
 
 # Browser
 ```php
-$primary_category_id = yoast_get_primary_term_id( 'category', get_the_ID() );
-if ( ! empty( $primary_category_id ) ) {
-    $category = get_category( $primary_category_id );
-    if ( ! is_wp_error( $category ) ) {
-        echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a>';
-    }
+$categories = get_the_category();
+if ( ! empty( $categories ) ) {
+    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+}
+```
+```php
+// Lấy các term từ taxonomy 'events-category'
+$terms = get_terms(array(
+    'taxonomy'   => 'events-category',
+    'hide_empty' => false, // Đặt là true nếu bạn chỉ muốn lấy các category có bài viết
+    'number'     => 1      // Giới hạn số lượng term được truy xuất là 1
+));
+
+// Kiểm tra và hiển thị term đầu tiên
+if (!is_wp_error($terms) && !empty($terms)) {
+    $first_term = $terms[0]; // Lấy term đầu tiên
+    echo 'Tên chuyên mục: ' . esc_html($first_term->name) . '<br>';
+    echo 'Mô tả chuyên mục: ' . esc_html($first_term->description) . '<br>';
+    echo 'Liên kết chuyên mục: <a href="' . esc_url(get_term_link($first_term)) . '">' . esc_html($first_term->name) . '</a>';
+} else {
+    echo 'Không tìm thấy term hoặc có lỗi xảy ra.';
 }
 ```
