@@ -97,3 +97,49 @@ add_action('wp_ajax_load_more_posts', 'load_more_posts');
 add_action('wp_ajax_nopriv_load_more_posts', 'load_more_posts');
 
 ```
+```php
+function load_more_js() {
+    ?>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#load-more').on('click', function() {
+                var button = $(this);
+                var page = button.data('page') + 1;
+                var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+                var postContainer = $('#post-container');
+
+                $('#loading-icon').show();
+                button.hide();
+
+                $.ajax({
+                    url: ajaxurl,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        'action': 'load_more_posts',
+                        'page' => page
+                    },
+                    success: function(response) {
+                        if (response.html == '') {
+                            $('#no-more-posts').show();
+                        } else {
+                            postContainer.append(response.html);
+                            button.data('page', page);
+
+                            if (response.has_more) {
+                                button.show();
+                            } else {
+                                $('#no-more-posts').show();
+                            }
+                        }
+                        $('#loading-icon').hide();
+                    }
+                });
+            });
+        });
+    </script>
+    <?php
+}
+
+add_action('wp_footer', 'load_more_js');
+```
