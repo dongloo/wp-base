@@ -1,67 +1,99 @@
-# Filter
 ```php
-function filter_custom_post_type_archive($query) {
+function setup_custom_post_type_archive($query) {
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('demo-center')) {
-        // Default settings
-        $query->set('posts_per_page', 6);
-
-        // Check for the chosen filter
-        if (isset($_GET['filter'])) {
-            $filter = sanitize_text_field($_GET['filter']);
-            $today = current_time('Y-m-d');
-            $day_of_week = date('N', current_time('timestamp')); // Get the current day of the week (1-7)
-
-            switch ($filter) {
-                case 'today':
-                    $query->set('date_query', array(
-                        array(
-                            'year'  => date('Y'),
-                            'month' => date('m'),
-                            'day'   => date('d'),
-                        ),
-                    ));
-                    break;
-
-                case 'this_week':
-                    $query->set('date_query', array(
-                        array(
-                            'year'     => date('Y'),
-                            'week'     => date('W'),
-                        ),
-                    ));
-                    break;
-
-                case 'this_month':
-                    $query->set('date_query', array(
-                        array(
-                            'year'  => date('Y'),
-                            'month' => date('m'),
-                        ),
-                    ));
-                    break;
-
-                case 'last_90_days':
-                    $query->set('date_query', array(
-                        array(
-                            'after' => date('Y-m-d', strtotime('-90 days')),
-                            'inclusive' => true,
-                        ),
-                    ));
-                    break;
-
-                default:
-                    // No filter, use the default settings
-                    break;
-            }
-        }
+        $query->set('posts_per_page', 3);
     }
 }
-add_action('pre_get_posts', 'filter_custom_post_type_archive');
+add_action('pre_get_posts', 'setup_custom_post_type_archive');
 ```
 
 ```php
-// Unregister the tags taxonomy for posts
-add_action('init', function () {
-    unregister_taxonomy_for_object_type('post_tag', 'post');
-});
+if (have_posts()) : ?>
+    <div id="post-container">
+        <?php while (have_posts()) : the_post(); ?>
+            <div class="post">
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_excerpt(); ?></p>
+            </div>
+        <?php endwhile; ?>
+    </div>
+    <button id="load-more" data-page="1">Load More</button>
+    <div id="loading-icon" style="display:none;">Loading...</div>
+    <div id="no-more-posts" style="display:none;">No more posts to show.</div>
+<?php else :
+    echo 'No posts found';
+endif;
+
+```
+
+```php
+function load_more_js() {
+    ?>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#load-more').on('click', function() {
+                var button = $(this);
+                var page = button.data('page') + 1;
+                var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+                var postContainer = $('#post-container');
+
+                $('#loading-icon').show();
+                button.hide();
+
+                $.ajax({
+                    url: ajaxurl,
+                    type: 'POST',
+                    data: {
+                        'action': 'load_more_posts',
+                        'page': page
+                    },
+                    success: function(response) {
+                        if (response == '') {
+                            $('#no-more-posts').show();
+                        } else {
+                            postContainer.append(response);
+                            button.data('page', page);
+                            button.show();
+                        }
+                        $('#loading-icon').hide();
+                    }
+                });
+            });
+        });
+    </script>
+    <?php
+}
+
+add_action('wp_footer', 'load_more_js');
+
+```
+
+```php
+function load_more_posts() {
+    $page = isset($_POST['page']) ? intval($_POST['page']) : 0;
+
+    $args = array(
+        'post_type' => 'demo-center',
+        'posts_per_page' => 3,
+        'paged' => $page,
+    );
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()):
+        while ($query->have_posts()): $query->the_post(); ?>
+            <div class="post">
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_excerpt(); ?></p>
+            </div>
+        <?php endwhile;
+    endif;
+
+    wp_reset_postdata();
+    die();
+}
+
+add_action('wp_ajax_load_more_posts', 'load_more_posts');
+add_action('wp_ajax_nopriv_load_more_posts', 'load_more_posts');
+
 ```
