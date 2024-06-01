@@ -152,3 +152,18 @@ define( 'WP_AUTO_UPDATE_CORE', false );
 ```php
 define('WP_ACCESSIBLE_HOSTS', 'api.wordpress.org ');
 ```
+
+
+
+# Tắt XML-RPC
+```php
+add_filter('xmlrpc_enabled', '__return_false');
+add_filter('wp_headers', 'wptangtoc_remove_x_pingback');
+add_filter('pings_open', '__return_false', 9999);
+add_filter('pre_update_option_enable_xmlrpc', '__return_false');
+add_filter('pre_option_enable_xmlrpc', '__return_zero');
+function wptangtoc_remove_x_pingback($headers) {
+unset($headers['X-Pingback'], $headers['x-pingback']);
+return $headers;
+}
+```
