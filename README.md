@@ -19,7 +19,7 @@ wp_enqueue_script('main-scripts-js', get_stylesheet_directory_uri() . '/assets/m
 
 
 ## Date
-```php
+```bash
 <?=date('Y-m-d-h-i-s')?>
 ```
 
